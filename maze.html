@@ -22,7 +22,7 @@ function Token(sx,sy,rad,styleString,n)
 	this.angle=(2*Math.PI)/n;
 	this.moveIt=moveToken;
 	this.fillStyle=styleString;
-)
+}
 function drawtoken()
 {
     ctx.fillStyle=this.fillStyle;
@@ -35,6 +35,7 @@ function drawtoken()
 	    ctx.lineTo(this.sx+rad*Math.cos((i-.5)*this.angle),this.sy+rad*Math.sin((i-.5)*this.angle));
 		ctx.fill();
 	}
+}
 function moveToken(dx,dy)
 {
     this.sx +=dx;
